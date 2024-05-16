@@ -4,25 +4,121 @@ SEARCH
 =================================================
 */
 form{
-    width:100%;
-    max-width:600px;
-    margin:0 auto;
- }
- input{
-    width:100%;
-    font-size:32px;
-    margin:5px 0;
-    float:left;
-    border:none;
-    padding:10px;
-    outline:none;
- }
- .search-bar{
-    width:85%;
- }
- .submit-button{
-    width:15%;
-    background:#000;
-    color:#FFF;
- }
- 
+   width:100%;
+   max-width:600px;
+   margin:0 auto;
+}
+input{
+   width:100%;
+   font-size:32px;
+   margin:5px 0;
+   border:none;
+   padding:10px;
+   outline:none;
+   display:inline-block;
+}
+.search-bar{
+   width:80%;
+   color:#39e3b3;
+}
+.submit-button{
+   width:15%;
+   background:#ff9edf;
+   color:#FFF;
+}
+
+
+ /*
+=================================================
+BOOKMARKS
+=================================================
+*/
+.bookmarks{
+   padding:30px;
+   clear:both;
+   text-align: center;
+}
+.bookmarks i{
+   font-size:42px;
+   margin:0 20px;
+   color:#c8d1fa;
+   transition:.15s;
+   vertical-align: top;
+
+}
+.bookmarks i:hover{
+   font-size:72px;
+   position:relative;
+}
+
+/*
+=================================================
+CALCULATOR
+=================================================
+*/
+.calculator{
+   position:absolute;
+   bottom:50px;
+   right:50px;
+}
+#calc{
+   transition:.2s;
+   opacity:0;
+}
+
+/*
+=================================================
+POST-IT NOTE (IN CSS)
+=================================================
+*/
+#note{
+   width:250px;
+   height:250px;
+   resize: none;
+   background: #FFF;
+   padding:15px;
+   border:none;
+   position: absolute;
+   bottom:50px;
+   left:50px;
+   font-family:sans-serif;
+   color:#39e3b3;
+  }
+  
+  @media only screen and (max-width: 900px) {
+   h1{
+       margin-top:50px;
+       font-size:100px;
+   }
+}
+
+
+@media only screen and (max-width: 600px) {
+   h1{
+       margin-top:50px;
+       font-size:75px;
+   }
+   .bookmarks i{
+   margin:0 15px;
+   }
+}
+  
+html {
+   background-color:#ffe7f2;
+}
+
+.head1 {
+   color:#9eafff;
+   text-align: center;
+   font-size:80px;
+   margin-top: 250px;
+}
+
+div {
+   color:#ff9edf;
+   font-size: 30px;
+   margin-top: 20px;
+   margin-left:50px; 
+   
+   
+}
